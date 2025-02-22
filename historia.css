@@ -1,0 +1,30 @@
+article {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px;
+  margin: 0px auto;
+  gap: 30px 100px;
+  background-color: #fff;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+section:last-child {
+  grid-column: 1 / -1;
+}
+
+section {
+  display: grid;
+}
