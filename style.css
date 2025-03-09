@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
 }
 
+/* inicio header */
 header {
   padding: 15px 15px 5px 15px;
   display: flex;
@@ -44,6 +45,7 @@ header a {
 header a:hover {
   border-bottom: 4px solid #3ead2f;
 }
+/* fim header */
 
 /* inicio slider */
 
@@ -243,6 +245,39 @@ header a:hover {
   background-color: #3ead2f;
 }
 
+/* inicio footer */
 footer {
   background-color: #3ead2f;
+  padding: 20px;
 }
+
+.iconmercado img {
+  margin: auto;
+  display: block;
+}
+
+.iconsfooter {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.iconsfooter img:not(:last-child) {
+  margin-right: 250px;
+}
+
+.descricaofooter {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.descricaofooter div:not(:last-child) {
+  margin-right: 50px;
+}
+
+.descricaofooter a {
+  text-decoration: none;
+  color: white;
+}
+
+/* fim footer */
