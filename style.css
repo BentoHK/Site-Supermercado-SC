@@ -1,12 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: "Inter";
-  height: 100vh;
   box-sizing: border-box;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 header {
   padding: 15px 15px 5px 15px;
   display: flex;
@@ -31,17 +39,124 @@ header a {
   font-size: 20pt;
   text-decoration: none;
   padding: 15px;
-  transition-duration: 0.3s;
+  transition: 0.15s;
 }
 header a:hover {
   border-bottom: 4px solid #3ead2f;
 }
 
+/* inicio slider */
+
+.slider {
+  margin: 0 auto 100px auto;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manual-navigation {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.manual-btn {
+  border: 2px solid green;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: green;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+  transition: 1s;
+}
+#radio2:checked ~ .first {
+  margin-left: -100vw;
+  transition: 1s;
+}
+#radio3:checked ~ .first {
+  margin-left: -200vw;
+  transition: 1s;
+}
+#radio4:checked ~ .first {
+  margin-left: -300vw;
+  transition: 1s;
+}
+
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-auto {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: green;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: green;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: green;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: green;
+}
+/* fim slider */
+
 .quadrados {
   background-color: #3ead2f;
   padding: 15px;
   text-align: center;
-  font-size: 13pt;
+  font-size: 15pt;
 }
 
 .qualidade,
@@ -49,8 +164,8 @@ header a:hover {
 .atendimento,
 .entregas {
   background-color: #fff;
-  width: 150px;
-  height: 150px;
+  width: 185px;
+  height: 185px;
   border: 0.5px solid black;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -59,7 +174,7 @@ header a:hover {
   margin-right: 15px;
   padding: 10px 10px 0px 10px;
   position: relative;
-  top: -50px;
+  top: -70px;
 }
 
 .encomendas {
@@ -68,14 +183,19 @@ header a:hover {
 }
 
 .encomendas a {
-  color: #3ead2f;
+  color: black;
   margin: auto;
   text-decoration: none;
   padding: 15px;
   border: 1px solid black;
   border-radius: 5px;
-  display: block;
-  width: 100px;
+  display: inline-block;
+}
+
+.encomendas img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 
 .conhecamercado {
