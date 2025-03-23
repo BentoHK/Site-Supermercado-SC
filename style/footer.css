@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+footer {
+  background-color: #3ead2f;
+  padding: 20px;
+}
+
+.iconmercado img {
+  margin: auto;
+  display: block;
+}
+
+.iconsfooter {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.iconsfooter img:not(:last-child) {
+  margin-right: 250px;
+}
+
+.descricaofooter {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.descricaofooter div:not(:last-child) {
+  margin-right: 50px;
+}
+
+.descricaofooter a {
+  text-decoration: none;
+  color: white;
+}

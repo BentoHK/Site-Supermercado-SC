@@ -9,57 +9,24 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: "Segoe UI", Arial, sans-serif;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
 
-/* inicio header */
-header {
-  padding: 15px 15px 5px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-}
-
-header img {
-  width: 90px;
-  height: 90px;
-}
-
-header a {
-  color: black;
-  font-weight: bold;
-  font-size: 20pt;
-  text-decoration: none;
-  padding: 15px;
-  transition: 0.15s;
-}
-header a:hover {
-  border-bottom: 4px solid #3ead2f;
-}
-/* fim header */
-
 /* inicio slider */
 
 .slider {
-  margin: 0 auto 100px auto;
+  margin: 0 auto 200px auto;
   width: 100vw;
-  height: 60vh;
   overflow: hidden;
   position: relative;
 }
 
 .slides {
   width: 400%;
-  height: 100%;
+  height: 650px;
   display: flex;
 }
 
@@ -152,6 +119,34 @@ header a:hover {
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background-color: green;
 }
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.slider button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Posicionamento das setas */
+.prev {
+  left: 30px;
+}
+
+.next {
+  right: 30px;
+}
 /* fim slider */
 
 .quadrados {
@@ -166,17 +161,60 @@ header a:hover {
 .atendimento,
 .entregas {
   background-color: #fff;
-  width: 185px;
-  height: 185px;
-  border: 0.5px solid black;
+  width: 300px;
+  height: 300px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
   margin-right: 15px;
   padding: 10px 10px 0px 10px;
   position: relative;
-  top: -70px;
+  top: -100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.quadrados img {
+  height: 200px;
+  width: 200px;
+}
+
+.titulo-quadrado {
+  font-size: 20px;
+}
+
+.banner_frutas img {
+  height: 200px;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.ofertasdia {
+  margin-top: 40px;
+  text-align: center;
+}
+.ofertasdia p {
+  margin-bottom: 90px;
+}
+
+.fundo_ofertas {
+  background-image: url("../imagens/Ofertas_fundo.png");
+  height: 400px;
+  width: 100%;
+}
+.fundo_ofertas img {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  top: -40px;
+  margin: 0 30px;
+}
+
+.fundo_ofertas img:hover {
+  filter: opacity(0.9);
 }
 
 .encomendas {
@@ -204,6 +242,19 @@ header a:hover {
   background-color: #3ead2f;
   text-align: center;
   padding: 15px;
+}
+.videos {
+  display: flex;
+  gap: 10px;
+}
+.iconsVideos {
+  height: 500px;
+}
+.iconsVideos iframe {
+  display: block;
+  height: 180px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .comoachar {
@@ -244,40 +295,3 @@ header a:hover {
 .cadastro {
   background-color: #3ead2f;
 }
-
-/* inicio footer */
-footer {
-  background-color: #3ead2f;
-  padding: 20px;
-}
-
-.iconmercado img {
-  margin: auto;
-  display: block;
-}
-
-.iconsfooter {
-  text-align: center;
-  margin: 50px 0px;
-}
-
-.iconsfooter img:not(:last-child) {
-  margin-right: 250px;
-}
-
-.descricaofooter {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-.descricaofooter div:not(:last-child) {
-  margin-right: 50px;
-}
-
-.descricaofooter a {
-  text-decoration: none;
-  color: white;
-}
-
-/* fim footer */

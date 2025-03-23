@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Supermercado SãoCarlos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -24,6 +26,8 @@
       </ul>
     </nav>
   </header>
+
+
   <main>
     <div class="slider">
       <div class="slides">
@@ -55,6 +59,9 @@
           <div class="auto-btn4"></div>
         </div>
       </div>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
       <div class="manual-navigation">
         <label for="radio1" class="manual-btn"></label>
         <label for="radio2" class="manual-btn"></label>
@@ -62,37 +69,60 @@
         <label for="radio4" class="manual-btn"></label>
       </div>
     </div>
+
     <div class="quadrados">
       <div class="qualidade">
         <img src="./imagens/index/image1.png" alt="imagem">
-        <p>Qualidade</p>
+        <p class="titulo-quadrado">Qualidade</p>
       </div>
       <div class="precojusto">
         <img src="./imagens/index/image2.png" alt="imagem">
-        <p>Preço justo</p>
+        <p class="titulo-quadrado">Preço justo</p>
       </div>
       <div class="atendimento">
         <img src="./imagens/index/image3.png" alt="imagem">
-        <p>Bom atendimento</p>
+        <p class="titulo-quadrado">Bom atendimento</p>
       </div>
       <div class="entregas">
         <img src="./imagens/index/image 4.png" alt="imagem">
-        <p>Entregas</p>
+        <p class="titulo-quadrado">Entregas</p>
       </div>
     </div>
+
+
+    <div class="banner_frutas">
+      <img src="imagens/imagens frutas.svg">
+    </div>
+
+
     <div class="ofertasdia">
       <h2>Ofertas do dia</h2>
       <p>Referente ao dia 00/00/0000 até o dia 00/00/0000</p>
+      <div class="fundo_ofertas">
+        <img src="imagens/oferta.png">
+        <img src="imagens/oferta.png">
+        <img src="imagens/oferta.png">
+      </div>
     </div>
+
     <div class="encomendas">
       <h2>Encomende suas compras</h2>
       <p>Levaremos até você <img src="" alt=""></p>
       <a href="/"><img src="./imagens/index/whatsapp.png" alt="imgzap">Encomendar</a>
     </div>
+
     <div class="conhecamercado">
       <h2>Conheça nosso mercado</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=wWZ_GEY2SlMzsTLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="videos">
+        <iframe width="60%" height="600px" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=wWZ_GEY2SlMzsTLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="iconsVideos">
+          <iframe width="15%" height="200px" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=wWZ_GEY2SlMzsTLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="15%" height="200px" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=wWZ_GEY2SlMzsTLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="15%" height="200px" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=wWZ_GEY2SlMzsTLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
+
     <div class="comoachar">
       <h2>Como nos achar</h2>
       <div class="gridmap">
@@ -110,6 +140,7 @@
     </div>
     <div class="cadastro"></div>
   </main>
+
   <footer>
     <div class="iconmercado">
       <img src="./imagens/index/mercadoiconfooter.png" alt="">
@@ -137,7 +168,8 @@
       </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
 </body>
+
+<script src="./script/script.js"></script>
 
 </html>

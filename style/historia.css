@@ -8,12 +8,12 @@ article {
   background-color: #fff;
 }
 
-p {
+main p {
   text-align: justify;
   font-size: 20pt;
 }
 
-h1 {
+main h1 {
   text-align: center;
   font-size: 35pt;
 }

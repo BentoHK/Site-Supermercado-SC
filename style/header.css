@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+header a {
+  color: black;
+  font-size: 15pt;
+  text-decoration: none;
+  padding: 20px;
+}
+header a:hover {
+  border-bottom: 6px solid #3ead2f;
+}
