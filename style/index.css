@@ -149,6 +149,7 @@ body {
 }
 /* fim slider */
 
+/* inicio quadrados */
 .quadrados {
   background-color: #3ead2f;
   padding: 15px;
@@ -192,6 +193,9 @@ body {
   object-fit: cover;
 }
 
+/* FIm quadrados */
+
+/* Inicio ofertas do dia */
 .ofertasdia {
   margin-top: 40px;
   text-align: center;
@@ -217,6 +221,9 @@ body {
   filter: opacity(0.9);
 }
 
+/* Fim ofertas do dia */
+
+/* Inicio encomendas */
 .encomendas {
   padding: 15px;
   text-align: center;
@@ -238,6 +245,9 @@ body {
   height: 50px;
 }
 
+/* Fim encomendas */
+
+/* Inicio videos de apresentação do mercado */
 .conhecamercado {
   background-color: #3ead2f;
   text-align: center;
@@ -246,6 +256,7 @@ body {
 .videos {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .iconsVideos {
   height: 500px;
@@ -257,6 +268,9 @@ body {
   margin-bottom: 30px;
 }
 
+/* Fim videos de apresentação do mercado */
+
+/* Inicio localização no mapa */
 .comoachar {
   padding: 15px;
 }
@@ -291,6 +305,8 @@ body {
   margin: 15px;
   border-radius: 15px;
 }
+
+/* Fim localização no mapa */
 
 .cadastro {
   background-color: #3ead2f;
