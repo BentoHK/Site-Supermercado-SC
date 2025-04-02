@@ -28,13 +28,51 @@
   </header>
   <main>
     <h1>Trabalhe Conosco</h1>
-    <form action="">
+    <form action="" method="POST" autocomplete="on">
       <div>
-        <label for="Nome">Nome completo:</label>
-        <input type="text" id="nome" />
+        <label for="nome">Nome completo: </label>
+        <input type="text" name="nome" id="nome" autocomplete="name" required>
       </div>
       <div>
-        <label for="email"></label>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="telefone">Telefone: </label>
+        <input type="texto" name="telefone" id="telefone" required inputmode="numeric" maxlength="15" placeholder="(00) 00000-0000" autocomplete="tel">
+      </div>
+      <div>
+        <label for="estado">Estado: </label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione um estado</option>
+        </select>
+      </div>
+      <div>
+        <label for="cidade">Cidade: </label>
+        <select id="cidade" name="cidade" disabled required>
+          <option value="">Selecione um estado primeiro</option>
+        </select>
+      </div>
+      <div>
+        <label for="endereco">Endereço: </label>
+        <input type="text" name="endereco" id="endereco">
+      </div>
+      <div>
+        <label for="cargo">Cargo desejado: </label>
+        <input type="text" name="cargo" id="cargo" list="listacargo" placeholder="Cargos: ">
+        <datalist id="listacargo">
+          <option value="Açougueiro"></option>
+          <option value="Operador de caixa"></option>
+          <option value="Balconista"></option>
+          <option value="Repositor"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="curriculo">Currículo: </label>
+        <input type="file" name="curriculo" id="curriculo">
+      </div>
+      <div>
+        <input type="submit" value="Cadastrar">
       </div>
     </form>
   </main>
@@ -67,5 +105,7 @@
     </div>
   </footer>
 </body>
+<script src="./script/cadastro.js"></script>
+<script src="./script/cidade-estado.js"></script>
 
 </html>

@@ -121,7 +121,6 @@
       <a href="/"><img src="https://cdn-icons-png.flaticon.com/512/160/160200.png" alt="imgzap">Encomendar</a>
     </div>
 
-
     <div class="conhecamercado">
       <h2>Conheça nosso mercado</h2>
       <div class="videos">
@@ -153,7 +152,34 @@
       </div>
     </div>
 
-    <div class="cadastro"></div>
+    <div class="cadastro">
+      <h2>Cadastre-se em nosso mercado</h2>
+      <p>e ganhe descontos exclusivos</p>
+      <form action="" method="POST" autocomplete="on">
+        <div>
+          <label for="nome">Nome completo: </label>
+          <input type="text" name="nome" id="nome" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" autocomplete="email" required>
+        </div>
+        <div class="tel-cpf">
+          <div>
+            <label for="telefone">Telefone: </label>
+            <input type="texto" name="telefone" id="telefone" required inputmode="numeric" maxlength="15" placeholder="(00) 00000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf" required maxlength="14" placeholder="000.000.000-00" inputmode="numeric">
+          </div>
+        </div>
+        <div>
+          <input type="submit" value="Cadastrar">
+        </div>
+
+      </form>
+    </div>
   </main>
 
   <footer>
@@ -197,5 +223,6 @@
 
 <script src="./script/slide.js"></script>
 <script src="./script/ofertasdia.js"></script>
+<script src="./script/cadastro.js"></script>
 
 </html>
