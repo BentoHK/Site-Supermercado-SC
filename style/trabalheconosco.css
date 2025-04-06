@@ -43,6 +43,7 @@ form input:not(input[type="file"], input[type="submit"], input[type="reset"]) {
 form select {
   padding: 5px;
   border-radius: 10px;
+  font-size: 16px;
 }
 
 form input[type="submit"],
