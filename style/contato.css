@@ -1,0 +1,148 @@
+main > h1 {
+  background-color: #3ead2f;
+  color: white;
+  padding: 40px 60px;
+  font-size: 2.3rem;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+/* ===== BLOCO 1: CONTATO ===== */
+.formscontato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #3ead2f;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.texto-contato {
+  padding: 40px;
+}
+
+.texto-contato h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.texto-contato p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.texto-contato a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.texto-contato p img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.formscontato form {
+  background-color: white;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formscontato form input,
+.formscontato form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.formscontato form input[type="submit"] {
+  background-color: #3ead2f;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.formscontato form input[type="submit"]:hover {
+  background-color: #36963a;
+}
+
+/* ===== BLOCO 2: PEDIDO ===== */
+.pedido-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.imagem-pedido {
+  background-color: #3ead2f;
+  padding: 10px;
+}
+
+.imagem-pedido img {
+  width: 800px;
+  height: auto;
+  display: block;
+}
+
+.bloco-pedido {
+  background-color: #3ead2f;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bloco-pedido h2 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.bloco-pedido p {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.bloco-pedido p img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.bloco-pedido a {
+  background-color: white;
+  border: 2px solid #3ead2f;
+  color: #3ead2f;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.bloco-pedido a:hover {
+  background-color: #3ead2f;
+  color: white;
+}
+
+.bloco-pedido a img {
+  width: 50px;
+  height: 50px;
+}
