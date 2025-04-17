@@ -13,7 +13,8 @@ main > h1 {
   grid-template-columns: 1fr 1fr;
   background-color: #3ead2f;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  max-height: 330px;
 }
 
 .texto-contato {
@@ -37,9 +38,10 @@ main > h1 {
   transition: color 0.3s ease;
 }
 
-.texto-contato p img {
+.texto-contato p i {
   vertical-align: middle;
   margin-right: 6px;
+  font-size: 25px;
 }
 
 .formscontato form {
@@ -47,10 +49,13 @@ main > h1 {
   margin: 40px;
   padding: 30px;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+  top: -20%;
 }
 
 .formscontato form input,
@@ -78,24 +83,24 @@ main > h1 {
 
 /* ===== BLOCO 2: PEDIDO ===== */
 .pedido-contato {
+  background-color: #3ead2f;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 100px;
 }
 
 .imagem-pedido {
-  background-color: #3ead2f;
-  padding: 10px;
+  padding: 15px;
 }
 
 .imagem-pedido img {
   width: 800px;
   height: auto;
   display: block;
+  border-radius: 10px;
 }
 
 .bloco-pedido {
-  background-color: #3ead2f;
   color: white;
   padding: 40px;
   display: flex;
@@ -115,11 +120,10 @@ main > h1 {
   margin-bottom: 15px;
 }
 
-.bloco-pedido p img {
+.bloco-pedido p i {
   width: 50px;
   height: 50px;
-  vertical-align: middle;
-  margin-left: 5px;
+  font-size: 35px;
 }
 
 .bloco-pedido a {

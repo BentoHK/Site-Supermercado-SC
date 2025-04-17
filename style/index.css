@@ -188,9 +188,13 @@ body {
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.quadrado img {
+.quadrado i {
+  display: flex;
   height: 120px;
   width: 120px;
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
   object-fit: contain;
 }
 
@@ -350,9 +354,7 @@ p {
   transform: translateY(-3px);
 }
 
-.encomendas a img {
-  width: 45px;
-  height: 45px;
+.encomendas .fa-whatsapp {
   margin-right: 10px;
 }
 
