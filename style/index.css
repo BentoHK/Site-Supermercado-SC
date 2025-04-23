@@ -231,7 +231,8 @@ body {
 }
 
 .ofertasdia {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 .ofertasdia h2,
 p {
@@ -249,6 +250,32 @@ p {
 .fundo_ofertas img:hover {
   filter: brightness(1.1);
   transform: translateY(-10px);
+}
+
+.ofertasbotao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.ofertasbotao a {
+  color: white;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  padding: 12px 25px;
+  border: 1px solid #3ead2f;
+  background-color: #3ead2f;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ofertasbotao a:hover {
+  background-color: #32a822;
+  transform: translateY(-3px);
 }
 
 .overlay {

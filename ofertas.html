@@ -32,7 +32,27 @@
     </nav>
   </header>
   <main>
-
+    <section class="ofertas">
+      <div class="carrossel-container">
+        <button class="seta esquerda" aria-label="Anterior">&#10094;</button>
+    
+        <div class="carrossel">
+          <img src="./imagens/oferta.png" class="tabloide">
+          <img src="./imagens/oferta.png" class="tabloide">
+          <img src="./imagens/oferta.png" class="tabloide">
+          <img src="./imagens/oferta.png" class="tabloide">
+          <img src="./imagens/oferta.png" class="tabloide">
+        </div>
+    
+        <button class="seta direita" aria-label="Próximo">&#10095;</button>
+      </div>
+    
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <span class="fechar" aria-label="Fechar">&times;</span>
+        <img id="imagem-ampliada" src="">
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -72,5 +92,6 @@
     </div>
   </footer>
 </body>
+<script src="./script/tabloidesOfertas.js"></script>
 
 </html>
