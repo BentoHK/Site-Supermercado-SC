@@ -12,13 +12,15 @@ class MobileNavBar {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
-    }); 
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
+    });
   }
 
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeCLass);
+    this.mobileMenu.classList.toggle(this.activeClass);
     this.animateLinks();
   }
 
@@ -37,6 +39,17 @@ class MobileNavBar {
 const mobileNavBar = new MobileNavBar(
   ".mobile-menu",
   ".nav-list",
-  ".nav-list li",
+  ".nav-list li"
 );
-mobileNavBar.init(); 
+mobileNavBar.init();
+
+let click = 0;
+function click_mob() {
+  if (click == 0) {
+    document.querySelector("body").classList.add("travar_scroll");
+    click = 1;
+  } else if (click == 1) {
+    document.querySelector("body").classList.remove("travar_scroll");
+    click = 0;
+  }
+}

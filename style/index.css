@@ -22,12 +22,14 @@ body {
   width: 100vw;
   overflow: hidden;
   position: relative;
+  aspect-ratio: 16 / 9;
+  z-index: 1;
 }
 
 .slides {
-  width: 400%;
-  height: 650px;
+  width: 100%;
   display: flex;
+  background-color: #3ead2f30;
 }
 
 .slides input {
@@ -43,7 +45,8 @@ body {
 .slide img {
   width: 100vw;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
 }
 
 .manual-navigation {
@@ -67,7 +70,7 @@ body {
 }
 
 .manual-btn:hover {
-  background-color: green;
+  background-color: #3ead2f;
 }
 
 #radio1:checked ~ .first {
@@ -108,16 +111,16 @@ body {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: green;
+  background-color: #3ead2f93;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background-color: green;
+  background-color: #3ead2f;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background-color: green;
+  background-color: #3ead2f;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background-color: green;
+  background-color: #3ead2f;
 }
 
 .slider button {
@@ -131,7 +134,7 @@ body {
   font-size: 24px;
   padding: 10px;
   border-radius: 5px;
-  z-index: 10;
+  z-index: 2;
   transition: background 0.3s;
 }
 
@@ -150,6 +153,12 @@ body {
 /* fim slider */
 
 /* inicio quadrados */
+
+.quadrado a {
+  font-style: none;
+  text-decoration: none;
+  color: black;
+}
 .quadrados-container {
   background-color: #3ead2f;
   padding: 50px 0;
@@ -190,12 +199,8 @@ body {
 
 .quadrado i {
   display: flex;
-  height: 120px;
-  width: 120px;
   font-size: 120px;
-  align-items: center;
   justify-content: center;
-  object-fit: contain;
 }
 
 .titulo-quadrado {
@@ -203,6 +208,54 @@ body {
   font-weight: bold;
   margin-top: 15px;
   color: #333;
+}
+
+@media (max-width: 1076px) {
+  .quadrado {
+    width: 150px;
+    height: 150px;
+    margin-top: -80px;
+  }
+  .quadrado i {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 806px) {
+  .quadrados {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    position: static;
+    z-index: auto;
+  }
+  .quadrado {
+    position: static;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+  .quadrado i {
+    font-size: 120px;
+  }
+}
+@media (max-width: 583px) {
+  .quadrados {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    position: static;
+    z-index: auto;
+  }
+  .quadrado {
+    position: static;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+  .quadrado i {
+    font-size: 100px;
+  }
 }
 /* FIm quadrados */
 

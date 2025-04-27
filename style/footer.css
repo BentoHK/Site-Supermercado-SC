@@ -64,7 +64,7 @@ footer {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 895px) {
   .iconsfooter {
     flex-wrap: wrap;
     gap: 15px;

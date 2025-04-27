@@ -88,9 +88,10 @@ main > h1 {
 /* ===== BLOCO 2: PEDIDO ===== */
 .pedido-contato {
   background-color: #3ead2f;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .imagem-pedido {
@@ -153,4 +154,35 @@ main > h1 {
 .bloco-pedido a img {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 1080px) {
+  
+  .imagem-pedido img {
+    width: 500px;
+  }
+}
+@media (max-width: 810px) {
+  .pedido-contato {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .imagem-pedido img {
+    width: 450px;
+  }
+  .texto-contato {
+    padding: 20px;
+  }
+
+  .formscontato {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    margin-bottom: 0px;
+  }
+  .formscontato form {
+    position: static;
+    padding: 20px;
+  }
+
 }

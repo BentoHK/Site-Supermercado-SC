@@ -24,6 +24,10 @@ article img {
   height: auto;
 }
 
+article .corredor {
+  min-width: 350px;
+}
+
 section:last-child {
   grid-column: 1 / -1;
 }
