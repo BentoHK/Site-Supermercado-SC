@@ -41,3 +41,27 @@ prevButton.addEventListener("click", function () {
 nextButton.addEventListener("click", function () {
   showSlide(index + 1);
 });
+
+let startX = 0;
+let endX = 0;
+
+const slider = document.querySelector('.slider');
+
+slider.addEventListener('touchstart', function (e) {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', function (e) {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', function () {
+  if (startX - endX > 50) {
+    // Swipe para a esquerda
+    showSlide(index + 1);
+  } else if (endX - startX > 50) {
+    // Swipe para a direita
+    showSlide(index - 1);
+  }
+});
+

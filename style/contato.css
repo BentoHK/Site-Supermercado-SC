@@ -90,6 +90,7 @@ main > h1 {
   background-color: #3ead2f;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-bottom: 100px;
   align-items: center;
 }

@@ -122,9 +122,12 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .tabloide {
     width: 200px;
     margin: 0 5px;
+  }
+  .seta {
+    opacity: 0;
   }
 }
