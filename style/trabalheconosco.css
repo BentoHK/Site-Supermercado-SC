@@ -68,7 +68,13 @@ input[type="reset"]:hover {
 @media (max-width: 730px) {
   form
     input:not(input[type="file"], input[type="submit"], input[type="reset"]) {
-    width: 350px;
+    width: 300px;
+  }
+  .estado-cidade {
+    display: block;
+  }
+  .div-select-estado {
+    margin-bottom: 20px;
   }
   form select {
     font-size: 14px;
